@@ -1,0 +1,68 @@
+<Tela>:
+    orientation: 'vertical'
+
+    canvas:
+        Color:
+            rgba:[0.4,0.4,0.2,1]
+        Rectangle:
+            size: self.width,40
+            pos: 0,560
+        
+    Label:
+        id: contatxt
+        
+        font_size: 20
+        color: [1,1,1,1]
+        size_hint_y: None
+        height: 40
+
+    Label:
+        id: monitor
+        text: "0"
+        font_size: 60
+        color: [1,1,1,1]
+        size_hint_y: None
+        height: 200
+
+    TextInput:
+        id: texto
+        font_size: 20
+        backgroud_color: [0,1,0,1]
+        size_hint_y: None
+        height: 40
+        
+    GridLayout:
+        rows: 3
+        cols: 2
+        
+        Button:
+            text: "+"
+            font_size:50
+            
+            
+
+        Button:
+            text: "-"
+            font_size:50
+            
+
+        Button:
+            text: "/"
+            font_size:50
+            
+
+        Button:
+            text: "*"
+            font_size:50
+            
+
+        Button:
+            text: "="
+            font_size:50
+            
+
+        Button:
+            text: "CE"
+            font_size:50
+            
+

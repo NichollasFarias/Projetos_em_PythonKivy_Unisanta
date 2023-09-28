@@ -1,0 +1,69 @@
+<Tela>:
+    orientation: 'vertical'
+       
+    TextInput:
+        id: texto
+        text: "0"
+        font_size: 70
+        size_hint_y: None
+        height: 100
+        
+    BoxLayout:
+        size_hint_y: None
+        height: 35
+        ToggleButton:
+            id: TBCM1
+            text: "cm"
+            font_size: 25
+            group: "inicial"
+            on_press: app.analisar01(TBCM1,TBM1,TBKM1)
+            
+        ToggleButton:
+            id: TBM1
+            text: "m"
+            font_size: 25
+            group: "inicial"
+            on_press: app.analisar01(TBCM1,TBM1,TBKM1)
+            
+        ToggleButton:
+            id: TBKM1
+            text: "km"
+            font_size: 25
+            group: "inicial"
+            on_press: app.analisar01(TBCM1,TBM1,TBKM1)
+            
+    Button:
+        text: "Converter"
+        font_size: 50
+        background_color: (0,1,0,1)
+        on_press: app.Calculo(texto,LBres)
+        
+
+    BoxLayout:
+        size_hint_y: None
+        height: 35
+        ToggleButton:
+            id: TBCM2
+            text: "cm"
+            font_size: 25
+            group: "final"
+            on_press: app.analisar02(TBCM2,TBM2,TBKM2)
+            
+        ToggleButton:
+            id: TBM2
+            text: "m"
+            font_size: 25
+            group: "final"
+            on_press: app.analisar02(TBCM2,TBM2,TBKM2)
+            
+        ToggleButton:
+            id: TBKM2
+            text: "km"
+            font_size: 25
+            group: "final"
+            on_press: app.analisar02(TBCM2,TBM2,TBKM2)
+            
+    Label:
+        id: LBres
+        text: "0"
+        font_size: 80
